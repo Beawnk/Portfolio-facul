@@ -1,3 +1,6 @@
+html {
+    scroll-behavior:smooth;
+}
 body {
     background-color: rgba(0, 0, 0, 0.863);
     font-family: 'Roboto', sans-serif;
@@ -11,7 +14,7 @@ body {
     border-radius: 3px;
 }
 .nav-header {
-    height: 55px;
+    height: 70px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -223,7 +226,7 @@ body {
     position: relative;
     display: inline-block;
     list-style-type: none;
-    width: 165px;
+    width:  150px;
     height: 3px;
     background: #b5b2b2;
 }
@@ -267,6 +270,7 @@ body {
 .timeline ol li:nth-child(odd) div {
     top: -16px;
     transform: translateY(-100%);
+    border-radius: 10px 10px 10px 0px;
 }
 .timeline ol li:nth-child(odd) div::before {
     top: 100%;
@@ -275,6 +279,7 @@ body {
 }
 .timeline ol li:nth-child(even) div {
     top: calc(100% + 16px);
+    border-radius: 0px 10px 10px 10px;
 }
 .timeline ol li:nth-child(even) div::before {
   top: -8px;
