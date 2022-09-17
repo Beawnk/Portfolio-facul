@@ -35,7 +35,7 @@
             <div>
                 <h1>Olá, sou a Bianca!</h1>
                 <p>Estudante de análise e desenvolvimento de sistemas.</p>
-                <a href="#about"><button class="button-1">Sobre mim</button></a>
+                <a href="#about"><button class="button-home">Sobre mim</button></a>
             </div>
             <div class="home-img-container">
                 <img src="/image/home-img2.jpg" alt="">
@@ -87,7 +87,7 @@
                         </li>
                         <li>
                             <div>
-                                <time>2022 (atualmente)</time>Terminei o estágio
+                                <time>2022 (atualmente)</time>Finalizei o contrato do estágio
                             </div>
                         </li>
                         <li></li>
@@ -169,29 +169,27 @@
                         <div class="contact-pic">
                             <img src="/image/contact-img.png" alt="">
                         </div>
-                        <form class="contact-form validate-form">
-                            <span class="contact-title">Entre em contato</span>
-                            <p>Ficarei feliz em responder sua mensagem.</p>
-                            <div class="wrap-input validate-input">
-                                <input type="text" class="contact-input" name="nome">
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Nome</label>
-                            </div>
-                            <div class="wrap-input validate-input">
-                                <input type="text" class="contact-input" name="email">
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>E-mail</label>
-                            </div>
-                            <div class="wrap-input validate-input">
-                                <textarea type="message" class="contact-input" name="message"></textarea>
-                                <label>Mensagem</label>
-                            </div>
-                            <div class="contact-btn">
-                                <button class="form-btn">Enviar</button>
-                            </div>
-                        </form>
+                        <div class="l-form">
+                            <form action="" class="form">
+                                <h1 class="form__title">Entre em contato</h1>
+                                <p>Ficarei feliz em responder sua mensagem.</p>
+                                <div class="form__div">
+                                    <input type="text" class="form__input" placeholder=" ">
+                                    <label for="" class="form__label">Nome</label>
+                                </div>
+                                <div class="form__div">
+                                    <input type="text" class="form__input" placeholder=" ">
+                                    <label for="" class="form__label">Email</label>
+                                </div>
+                                <div class="form__div" style="margin-bottom: 7rem;">
+                                    <textarea type="message" class="form__input" name="message"></textarea>
+                                    <label for="" class="form__label">Mensagem</label>
+                                </div>
+                                <div class="contact-btn">
+                                    <button class="form-btn">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

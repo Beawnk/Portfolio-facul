@@ -156,7 +156,7 @@ body {
 .sec-padding {
     padding: 3rem 1rem 3rem 1rem;
 }
-.button-1 {
+.button-home {
     border: 1px solid transparent;
     padding: 20px 30px;
     border-radius: 45px;
@@ -167,8 +167,9 @@ body {
     font-size: 20px;
     width: 200px;
     transition: all 0.3s ease 0s;
+    background-color: transparent;
 }
-.button-1:hover {
+.button-home:hover {
     transform: scale(1.05);
     color: #fd029d;
     background-color: transparent;
@@ -449,6 +450,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 30rem;
 }
 .wrap-contact {
     display: flex;
@@ -460,102 +462,103 @@ body {
 }
 .contact-pic img {
     max-width: 600px;
+    height: 415px;
+
 }
 .contact-form {
     width: 390px;
 }
-.contact-title {
+:root{
+    --first-color: #fd029d;
+    --input-color: #80868B;
+    --border-color: #DADCE0;
+    --normal-font-size: 15px;
+    --small-font-size: 14px;
+}
+.l-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.l-form p {
+    margin-bottom: 2rem;
+}
+.form{
+    width: 450px;;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+}
+.form__title{
+    font-weight: 400;
     font-size: 30px;
     color: #333333;
     display: block;
     font-weight: bold;
     text-align: left;
 }
-.contact-form p {
-    margin-bottom: 2rem;
+.form__div{
+    position: relative;
+    height: 48px;
+    margin-bottom: 1.5rem;
 }
-.contact-form label {
-    color:#999; 
-    font-size:15px;
-    font-weight:normal;
-    position:absolute;
-    pointer-events:none;
-    left:10px;
-    top:10px;
-    transition:0.2s ease all; 
-    -moz-transition:0.2s ease all; 
-    -webkit-transition:0.2s ease all;
-}
-input:focus { 
+.form__input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: var(--normal-font-size);
+    border: 1px solid var(--border-color);
+    border-radius: 25px;
     outline: none;
-    border: 1px solid #8d8d8d98;
+    padding: 1rem;
+    background: none;
+    z-index: 1;
 }
-input:focus label, input:valid label {
-    top: -10px;
-    left: 10px;
-    font-size: 14px;
-    color: #5264AE;
-    background-color: white;
-    border-radius: 6px;
-    z-index: 999;
+.form__label{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    padding: 0 .25rem;
+    background-color: #fff;
+    color: var(--input-color);
+    font-size: var(--normal-font-size);
+    transition: .3s;
 }
-.bar { 
-    position:relative; 
-    display:block; 
-    width:300px; 
+/*Input focus move up label*/
+.form__input:focus + .form__label{
+    top: -.5rem;
+    left: .8rem;
+    color: var(--first-color);
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    z-index: 10;
 }
-.bar:before, .bar:after 	{
-    content:'';
-    height:2px; 
-    width:0;
-    bottom:1px; 
-    position:absolute;
-    background:#5264AE; 
-    transition:0.2s ease all; 
-    -moz-transition:0.2s ease all; 
-    -webkit-transition:0.2s ease all;
+.form__input:not(:placeholder-shown).form__input:not(:focus)+ .form__label + textarea {
+    top: -.5rem;
+    left: .8rem;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    z-index: 10;
 }
-.bar:before {
-  left:50%;
+.form__input:focus{
+    border: 1.5px solid var(--first-color);
 }
-.bar:after {
-  right:50%; 
-}
-.input:focus .bar:before, input:focus .bar:after {
-    width:50%;
-}
-.highlight {
-    position:absolute;
-    height:60%; 
-    width:100px; 
-    top:25%; 
-    left:0;
-    pointer-events:none;
-    opacity:0.5;
-}
-input:focus .highlight {
-    -webkit-animation:inputHighlighter 0.3s ease;
-    -moz-animation:inputHighlighter 0.3s ease;
-    animation:inputHighlighter 0.3s ease;
-}
-@keyframes inputHighlighter {
-    from { background:#5264AE; }
-    to 	{ width:0; background:transparent; }
-}
-textarea:focus label {
+/* textarea:focus label {
     font-size: 14px;
     top: -10px;
     left: 10px;
     background-color: white;
     color: #5264AE;
-}
-.wrap-input {
+} */
+/* .wrap-input {
     position: relative;
     width: 100%;
     z-index: 1;
     margin-bottom: 10px;
-}
-.contact-input {
+} */
+/* .contact-input {
     height: 50px;
     border: none;
     outline: none;
@@ -567,8 +570,8 @@ textarea:focus label {
     font-size: 15px;
     line-height: 1.5;
     color: #666666;
-}
-.wrap-input textarea {
+} */
+.form__div textarea {
     min-height: 150px;
     border-radius: 25px;
     padding: 14px 30px;
