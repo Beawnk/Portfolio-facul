@@ -1,0 +1,15 @@
+.wrap-contact {
+    align-items: baseline;
+}
+.contact-pic img {
+    max-width: 580px;
+    height: 400px;
+}
+.contact-img {
+    padding: 3rem 0rem 0rem 6rem;
+    margin-top: 60px;
+    margin-bottom: 35px;
+}
+.contact-container {
+    min-height: 75vh;
+}

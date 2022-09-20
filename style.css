@@ -459,7 +459,7 @@ body {
 /* Formatação da pag contato  */
 .contact-container {
     width: 100%;
-    min-height: 75vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -474,9 +474,13 @@ body {
     width: 310px;
 }
 .contact-pic img {
-    max-width: 600px;
-    height: 415px;
-
+    max-width: 500px;
+    height: 310px;
+}
+.contact-img {
+    padding: 0rem 0rem 0rem 6rem;
+    margin-top: 30px;
+    margin-bottom: 35px;
 }
 .contact-pic ul {
     display: flex;
@@ -501,6 +505,13 @@ body {
     margin-right: .5rem;
     color: #3e3e3e;
 }
+.contact-pic ul a img {
+    color: #3e3e3e;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
 .contact-form {
     width: 390px;
 }
@@ -637,6 +648,43 @@ input:not(:placeholder-shown) + label , textarea:not(:placeholder-shown) + label
 }
 /* formatação ta parte final do site  */
 .footer {
-    background-color: black;
     margin-top: 60px;
+}
+.b-black {
+    background-color: black;
+    padding-bottom: 1rem;
+}
+.footer h1 {
+    color: #fd029d;
+    font-weight: bold;
+    font-size: 30px;
+}
+.footer p {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+.button-footer {
+    border: 1px solid transparent;
+    padding: 20px 30px;
+    border-radius: 45px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #e456c5 0%, #fd029d  51%, #e456c5  100%);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    width: 250px;
+    transition: all 0.3s ease 0s;
+    background-color: transparent;
+}
+.button-footer:hover {
+    transform: scale(1.05);
+    color: #fd029d;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #fd029d;
 }
