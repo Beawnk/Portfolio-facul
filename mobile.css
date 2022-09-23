@@ -50,6 +50,8 @@
 }
 .home-content {
     flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
 }
 .home-content div {
     align-items: center;
@@ -62,15 +64,14 @@
     text-align: center;
 }
 .home-img-container img {
-    top: 0px;
-    left: 75%;
     width: 250px;
     height: 250px;
+    top: 8px;
+    left: 75%;
 }
 .home-img-container {
     width: 250px;
     height: 250px;
-    left: 100px;
 }
 .button-home {
     width: 160px;
