@@ -4,7 +4,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        topButton.style.display = "block";
+        topButton.style.display = "flex";
+        topButton.style.justifyContent = "center";
+        topButton.style.alignItems = "center";
     } else {
         topButton.style.display = "none";
     }

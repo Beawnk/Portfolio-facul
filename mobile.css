@@ -141,12 +141,36 @@
 }
 .l-form {
     height: 60vh;
-    width: 380px;
+    width: 100%;
 }
 .form {
     width: 100%;
     padding: 0;
 }
+@media screen and (max-width: 400px){
+    .contact-container {
+        min-height: 130vh;
+    }
+    .l-form {
+        height: 80vh;
+    }
+    .contact-pic img {
+        height: 155px;
+    }
+    #button-top i {
+        text-align: center;
+    }
+    .container {
+        max-width: 90%;
+    }
+    .cards {
+        justify-content: center;
+    }
+    .contact-pic ul a {
+        font-size: 15px;
+    }
+}
+
 .footer-content {
     flex-direction: column;
     align-items: center;
